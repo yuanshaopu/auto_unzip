@@ -1,0 +1,19 @@
+# 用户本地配置(可能含真实密码), 不入库
+passwords.txt
+
+# 打包产物
+dist/
+build/
+*.spec
+
+# 运行/日志产物
+*.log
+解压合集/
+已处理/
+.auz_tmp_*/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
