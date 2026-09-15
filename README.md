@@ -11,7 +11,6 @@
 - **密码逐个尝试**：先试无密码，再按 `passwords.txt` 顺序尝试；命令行可用 `--password` 追加。
 - **层层剥皮**：解压产物里的压缩包会被继续就地解压，直到没有可解压的包。
 - **伪装扩展名识别**：头部即 zip/rar/7z 的文件，或「前置数据 + 追加 ZIP」的 polyglot（如 mp4 后拼接 zip），都会按内容识别处理。
-- **自动归类**：合集里名称以 `cos` 开头 → human，`G` 开头 → game，`dm` 开头 → animation（目录可配置）。
 - **引擎自动检测**：优先 7-Zip（`7z.exe`），否则用 WinRAR（`Rar.exe` / `WinRAR.exe`）。
 
 ## 环境要求
@@ -55,7 +54,6 @@ mypassword2
 | `--password` | 追加密码，可多次 |
 | `--password-file` | 密码文件路径 |
 | `--fake-ext` | 疑似伪装扩展名（默认 `.mp4,.tmp`） |
-| `--route-human` / `--route-game` / `--route-animation` | 归类目标目录 |
 | `--keep-processed` | 保留「已处理」目录里的原压缩包 |
 | `--max-extractions` | 单个来源最大解压次数（默认 300） |
 | `--timeout` | 单次解压超时秒数（默认 900） |
